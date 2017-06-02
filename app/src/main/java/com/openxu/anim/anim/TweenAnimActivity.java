@@ -1,6 +1,7 @@
 package com.openxu.anim.anim;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -49,6 +50,8 @@ public class TweenAnimActivity extends AppCompatActivity {
         // 重复模式：重新开始
         anim.setRepeatMode(Animation.RESTART);
         anim.setZAdjustment(Animation.ZORDER_BOTTOM);
+        anim.setBackgroundColor(Color.BLACK);
+        anim.setDetachWallpaper(true);
         view.startAnimation(anim);
 //
 //	* android:zAdjustment：
