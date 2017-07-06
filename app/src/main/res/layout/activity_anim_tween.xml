@@ -30,11 +30,18 @@
             android:onClick="rotateAnim"
             android:text="rotate旋转动画"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="animSet"
+            android:text="AnimationSet（组合动画）"/>
+
     </LinearLayout>
     <View
         android:id="@+id/view"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#ff0000"/>
+        android:background="#ff0000"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
