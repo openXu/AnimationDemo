@@ -20,6 +20,7 @@
         <activity android:name=".anim.AnimationiActivity"/>
         <activity android:name=".anim.FrameAnimActivity"/>
         <activity android:name=".anim.TweenAnimActivity"/>
+        <activity android:name=".anim.PropertyAnimActivity"/>
     </application>
 
 </manifest>

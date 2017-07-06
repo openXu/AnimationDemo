@@ -43,6 +43,10 @@ public class AnimationiActivity extends AppCompatActivity {
     public void tweenAnim(View v){
         startActivity(new Intent(this, TweenAnimActivity.class));
     }
+    //属性动画
+    public void propertAnim(View v){
+        startActivity(new Intent(this, PropertyAnimActivity.class));
+    }
 
 
 }
