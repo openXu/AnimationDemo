@@ -3,26 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="animation"
-        android:text="各种动画"/>
+        android:onClick="frameAnim"
+        android:text="帧动画"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="interpolatorTest"
-        android:text="Interpolator使用示例"/>
-
+        android:onClick="tweenAnim"
+        android:text="补间动画"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="interpolatorTest"
-        android:text=""/>
-
-
-
+        android:onClick="propertAnim"
+        android:text="属性动画"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="propertAnimHight"
+        android:text="属性动画高级"/>
 </LinearLayout>

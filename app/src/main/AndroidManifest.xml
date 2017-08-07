@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FrameAnimActivity"/>
+        <activity android:name=".TweenAnimActivity"/>
+        <activity android:name=".PropertyAnimActivity"/>
+        <activity android:name=".PropertyAnimHeightActivity"/>
         <activity android:name=".InterpolatorActivity"/>
-        <activity android:name=".anim.AnimationiActivity"/>
-        <activity android:name=".anim.FrameAnimActivity"/>
-        <activity android:name=".anim.TweenAnimActivity"/>
-        <activity android:name=".anim.PropertyAnimActivity"/>
     </application>
 
 </manifest>

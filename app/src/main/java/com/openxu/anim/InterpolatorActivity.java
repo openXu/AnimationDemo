@@ -19,8 +19,6 @@ import android.view.animation.TranslateAnimation;
  * description: 插值器基本用法&系统自带插值器
  */
 public class InterpolatorActivity extends AppCompatActivity {
-
-
     private View view;
 
     @Override
@@ -33,7 +31,7 @@ public class InterpolatorActivity extends AppCompatActivity {
     //动画xml中设置插值器
     public void interpolatorXml(View v){
         //加载动画
-        Animation anim = AnimationUtils.loadAnimation(this, R.anim.anim_test);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         //执行动画
         view.startAnimation(anim);
     }

@@ -1,4 +1,4 @@
-package com.openxu.anim.anim;
+package com.openxu.anim;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
@@ -6,12 +6,15 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import com.openxu.anim.R;
+import com.openxu.anim.view.ColorEvaluator;
+import com.openxu.anim.view.ValueAnimView;
 
 /** 
  * autour: openXu
@@ -24,37 +27,23 @@ import com.openxu.anim.R;
  */
 public class PropertyAnimHeightActivity extends AppCompatActivity {
 
-    private View view;
+    private ValueAnimView animView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anim_property_height);
-        view = findViewById(R.id.view);
+        animView = (ValueAnimView)findViewById(R.id.animView);
     }
 
-    //ValueAnimator用法
-    public void valueAnim(View v){
-        //1、将一个值从0平滑过渡到1，时长300毫秒
-        ValueAnimator anim = ValueAnimator.ofFloat(0f, 1f);
-        anim.setDuration(300);
-        //监听动画值变化
-        anim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                float currentValue = (float) animation.getAnimatedValue();
-                Log.d("openxu", "当前value = " + currentValue);
-            }
-        });
-        anim.start();
+    public void colorAnim(View v){
+        //min API 21
+/*        ObjectAnimator anim = ObjectAnimator.ofArgb(animView, "color", Color.BLACK, Color.RED);
+        anim.setDuration(3000);
+        anim.start();*/
 
-        //2、从0到10整型过渡
-        anim = ValueAnimator.ofInt(0,10);
-        anim.setDuration(300);
-        anim.start();
-        //3、将一个值在5秒内从0过渡到5，再过渡到3，再过渡到10
-        anim = ValueAnimator.ofFloat(0f, 5f, 3f, 10f);
-        anim.setDuration(300);
+        ObjectAnimator anim = ObjectAnimator.ofObject(animView, "color", new ColorEvaluator(), Color.BLACK, Color.RED);
+        anim.setDuration(3000);
         anim.start();
     }
 

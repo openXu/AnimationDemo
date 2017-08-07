@@ -1,4 +1,4 @@
-package com.openxu.anim.anim;
+package com.openxu.anim;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;

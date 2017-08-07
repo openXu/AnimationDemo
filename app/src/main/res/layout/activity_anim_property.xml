@@ -2,33 +2,44 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:padding="20dp"
         android:orientation="vertical">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="valueAnim"
+            android:textAllCaps="false"
             android:text="ValueAnimator用法"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="objectAnim"
+            android:textAllCaps="false"
             android:text="ObjectAnimator用法"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="translateAnim"
-            android:text=""/>
+            android:onClick="nimatorSet"
+            android:textAllCaps="false"
+            android:text="AnimatorSet用法"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="rotateAnim"
-            android:text=""/>
+            android:onClick="animatorListener"
+            android:textAllCaps="false"
+            android:text="Animator监听"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="xmlAnim"
+            android:textAllCaps="false"
+            android:text="XML编写动画"/>
 
     </LinearLayout>
     <View

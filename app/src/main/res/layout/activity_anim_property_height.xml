@@ -1,51 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <LinearLayout
+
+    <com.openxu.anim.view.ValueAnimView
+        android:id="@+id/animView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="20dp"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="valueAnim"
-            android:textAllCaps="false"
-            android:text="ValueAnimator用法"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="objectAnim"
-            android:textAllCaps="false"
-            android:text="ObjectAnimator用法"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="nimatorSet"
-            android:textAllCaps="false"
-            android:text="AnimatorSet用法"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="animatorListener"
-            android:textAllCaps="false"
-            android:text="Animator监听"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="xmlAnim"
-            android:textAllCaps="false"
-            android:text="XML编写动画"/>
-
-    </LinearLayout>
-    <View
-        android:id="@+id/view"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#ff0000"/>
+        android:onClick="colorAnim"
+        android:textAllCaps="false"
+        android:text="ObjectAnimator改变色值"/>
 
 </RelativeLayout>

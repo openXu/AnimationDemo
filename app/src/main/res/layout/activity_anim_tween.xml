@@ -13,27 +13,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="alphaAnim"
+            android:textAllCaps="false"
             android:text="alpha透明度渐变"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="scaleAnim"
+            android:textAllCaps="false"
             android:text="scale缩放动画"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="translateAnim"
+            android:textAllCaps="false"
             android:text="translate位移动画"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="rotateAnim"
+            android:textAllCaps="false"
             android:text="rotate旋转动画"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="animSet"
+            android:textAllCaps="false"
             android:text="AnimationSet（组合动画）"/>
 
     </LinearLayout>

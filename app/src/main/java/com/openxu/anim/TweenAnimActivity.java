@@ -1,4 +1,4 @@
-package com.openxu.anim.anim;
+package com.openxu.anim;
 
 import android.content.Context;
 import android.graphics.Color;
